@@ -1,0 +1,16 @@
+/* Fix the navbar at the top */
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures navbar stays on top */
+}
+
+/* Content container with padding to avoid overlap */
+.content-container {
+  margin-top: 60px; /* Adjust according to navbar height */
+  height: calc(100vh - 60px); /* Make it take full screen minus navbar */
+  overflow-y: auto; /* Enables scrolling */
+  background-color: #f8f9fa; /* Light background for better visibility */
+}
